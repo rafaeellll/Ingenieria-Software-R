@@ -9,7 +9,7 @@ Proceso NotasDeEstudiante
 	sumaAprobadas <- 0
 	sumaDesaprobadas <- 0
 	Escribir '=== Notas de un Estudiante ==='
-	Escribir '¿Cuantas notas desea ingresar?: '
+	Escribir 'Â¿Cuantas notas desea ingresar?: '
 	Leer n
 	i <- 1
 	Mientras i<=n Hacer
