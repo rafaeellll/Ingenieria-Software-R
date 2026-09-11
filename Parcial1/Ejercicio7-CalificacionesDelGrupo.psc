@@ -19,7 +19,7 @@ Proceso CalificacionesDelGrupo
 		Escribir 'Promedio del alumno: ', promedioAlumno
 		sumaGrupo <- sumaGrupo+promedioAlumno
 		cantidadAlumnos <- cantidadAlumnos+1
-		Escribir '¿Desea capturar otro alumno? (S/N): '
+		Escribir 'Â¿Desea capturar otro alumno? (S/N): '
 		Leer continuar
 	FinMientras
 	Si cantidadAlumnos>0 Entonces
