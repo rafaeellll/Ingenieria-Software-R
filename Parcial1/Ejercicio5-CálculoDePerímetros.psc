@@ -7,7 +7,7 @@ Proceso CalculoDePerimetros
 	Escribir '2. Triangulo equilatero'
 	Escribir '3. Circulo'
 	Leer opcion
-	Según opcion Hacer
+	SegÃºn opcion Hacer
 		1:
 			Escribir 'Ingrese el lado del cuadrado: '
 			Leer lado
@@ -25,5 +25,5 @@ Proceso CalculoDePerimetros
 			Escribir 'El perimetro (circunferencia) del circulo es: ', perimetro
 		De Otro Modo:
 			Escribir 'error'
-	FinSegún
+	FinSegÃºn
 FinProceso
