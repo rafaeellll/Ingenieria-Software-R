@@ -1,0 +1,41 @@
+#include <iostream>
+#include <string>
+#include <cctype>
+using namespace std;
+
+bool contieneNumeros(string texto) {
+    for (int i = 0; i < (int)texto.length(); i++) {
+        if (isdigit(texto[i])) {
+            return true;
+        }
+    }
+    return false;
+}
+
+int main() {
+    string nombreCompleto, nombre, apellido;
+
+    cout << "=== Separar Nombre Completo ===" << endl;
+    cout << "Ingrese el nombre completo (nombre apellido): ";
+    getline(cin, nombreCompleto);
+
+    int espacio = nombreCompleto.find(' ');
+
+    if (espacio == (int)string::npos) {
+        cout << "Error: debe ingresar nombre y apellido separados por un espacio." << endl;
+        return 1;
+    }
+
+    nombre = nombreCompleto.substr(0, espacio);
+    apellido = nombreCompleto.substr(espacio + 1);
+
+    if (contieneNumeros(nombre) || contieneNumeros(apellido)) {
+        cout << "Error: el nombre o el apellido contienen numeros." << endl;
+        return 1;
+    }
+
+    cout << "Nombre: " << nombre << endl;
+    cout << "Apellido: " << apellido << endl;
+
+    return 0;
+}
