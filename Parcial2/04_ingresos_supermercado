@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    double ventas[100];
+    double total = 0;
+
+    cout << "=== Ingresos de Supermercado ===" << endl;
+
+    for (int i = 0; i < 100; i++) {
+        cout << "Venta del cliente " << (i + 1) << ": ";
+        cin >> ventas[i];
+        total += ventas[i];
+    }
+
+    cout << "\nSuma total de ingresos: " << total << endl;
+
+    return 0;
+}
